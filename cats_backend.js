@@ -31,6 +31,10 @@ app.get('/photos',function(req,res){
 app.get('/profile',function(req,res){
     res.render('profile.handlebars');
 });
+//contact form route
+app.get('/news',function(req,res){
+    res.render('news.handlebars');
+});
 //404 error
 app.use(function(req,res){
     res.status(404);
